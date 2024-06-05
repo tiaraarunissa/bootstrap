@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+        .navbar {
+            background-color: #df85a2;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar:hover {
+            background-color: #984672;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #282626 !important;
+        }
+
+        .nav-link:hover {
+            color: #282626 !important;
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 420px;
+            height: fit-content;
+            margin: 89px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px hsl(180, 0%, 52%);
+        }
+
+        body {
+            font-family: "Playfair Display", serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 400px;
+            margin: 50px auto;
+            background: linear-gradient(135deg, #df85a2, #984672);
+            border-radius: 20px;
+            box-shadow: 0 0 10px hsl(156, 3%, 68%);
+            overflow: hidden;
+        }
+
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin-top: 20px;
+            transform: rotate(-45deg);
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+        }
+
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 32px;
+            margin-top: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        p {
+            color: #fff;
+            font-size: 18px;
+            margin-top: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar {
+            background-color: #8e566a;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar:hover {
+            background-color: #9b6280;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .nav-link:hover {
+            color: #ffffff !important;
+            text-decoration: underline;
+        }
+
+        ul {
+            align-content: first baseline;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-me">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="19px" height="16px" fill="currentColor"
+                    class="bi bi-person" viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>
+
+                Biodata Saya
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="biodata.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobi.html">Hobi</a>
+                    </li>
+                    <li class=""nav-item">
+                    <a class="nav-link" href="favorite movies.html">Favorite Movies</a>
+                    </li>
+                    <li class="nav-item dropdown">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="heart"></div>
+        <div align="center">
+            <h1>Welcome To My Website</h1>
+            <p>Thanks You.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
